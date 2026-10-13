@@ -183,7 +183,7 @@
   }
 } */
 
-
+/* 
 .productCart {
   border: 2px solid black;
   padding: 55px;
@@ -191,7 +191,7 @@
   max-width: 500px;
   border-radius: 10px;
 }
-
+*/
 button {
   padding: 12px 22px;
   font-size: 16px;
@@ -203,9 +203,10 @@ button {
   color: white;
   cursor: pointer;
   transition: 0.3s;
+  width:700px;
 }
 
 button:hover {
   background-color: #3327e0;
   transform: translateY(2px);
-}
+} 

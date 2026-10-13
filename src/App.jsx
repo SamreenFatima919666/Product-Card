@@ -3,66 +3,247 @@
 // import reactLogo from './assets/react.svg'
 // import viteLogo from './assets/vite.svg'
 // import Navbar from "./components/Navbar.jsx"
-// import Student from './components/Student.jsx'
-import { useState } from 'react'
-import ProductCard from './components/ProductCard.jsx'
+//import user from './components/user.jsx'
+// import ProductCard from './components/ProductCard.jsx'
+// import CounterButton from './components/CounterButton';
+// import CounterDisplay from './components/CounterDisplay';
+import { useState } from 'react';
+import './App.css';
 
-import './App.css'
+export default function App(){
+  function handleClick(){
+    alert("you clicked me!")
 
 
-const Products = [
-{
-  name: "Laptop",
-   category: "Electronics", 
-   price: 85000,
-    stock: 5
-},
-{
- name: "Mouse",
-  category: "Accessories",
-   price: 1500,
-    stock: 0 
-},
-{
- name: "Keyboard", 
- category: "Accessories",
-  price: 3500,
-   stock: 10
-},
-{
-name: "Monitor",
- category: "Electronics",
-  price: 25000,
-   stock: 3
-},
-{
-name: "USB Cable", 
-category: "Accessories",
- price: 700,
-  stock: 15
-}
-]
-function App(){
-     const [count, setCount] = useState(0);
+  }
   return(
-    <div>
-    <h1>Cart Item :{count}</h1>
-    <div className='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 '>
-    {Products.map((product)=>(
-
-    <ProductCard 
-     productName = {product.name}
-       category =  {product.category}
-        price = {product.price}
-         stock = {product.stock}  
-         setCount={setCount}  />
-  ))}
-    </div>
-    </div>
+    <button onClick={handleClick}>
+      click me
+    </button>
   )
 }
-export default App;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function App(){
+//   const [count , setCount ] = useState(0);
+
+//   return(
+//     <div>
+//       <CounterDisplay count = {count} />
+//       <CounterButton setCount ={setCount}/>
+//     </div>
+//   )
+// }
+// export default App;
+
+
+ // Array practice start
+
+// function App(){
+//   const [fruit , setFruit] = useState(["Apple" ,"Mango"])
+
+//   return(
+//     <div>
+//       {fruit.map((fruits , index) =>(
+//       <p key={index}>{fruits}</p>
+//     ))}
+//        <button onClick={()  => setFruit([...fruit, "orange"])}> Add fruit</button>
+//       <button onClick={()  => setFruit(fruit.filter((fruit) => fruit !="Apple"))}> Remove fruit</button>
+//       </div>
+//   );
+
+
+
+// }
+// export default App
+
+// Array practice end
+
+
+
+
+
+// nested object
+// function App(){
+//   const[user , setUser]= useState({
+//     name: "Fatima",
+//     address:{
+//       city: "Lahore",
+//       country : " Pakistan"
+//     }
+//   })
+
+// return (
+//   <div>
+//     <h1>{user.name}</h1>
+// <p>{user.address.city}</p>
+// <p>{user.address.country}</p>
+//    <button onClick={()=>setUser({
+//     ...user,
+//     address:{
+//       ...user.address,
+//       city: user.address.city === "Lahore" ? "Islamabad" : "Lahore"
+//     }
+//    })}>click me to change city</button>
+//   </div>
+// )
+// }
+// export default App
+
+
+// nested object
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function App(){
+//     const [Student , setStudent] = useState({
+//     name : "Ali Raza",
+//     RollNo : 23,
+//     age: 12,
+//     city:"Lahore"
+
+
+// })
+// return(
+//     <div>
+//        <h2>{Student.name}</h2>
+//        <p>{Student.RollNo}</p>
+//        <p>{Student.age}</p>
+//        <p>{Student.city}</p>
+//        <button onClick={() =>setStudent({
+//         ...Student,
+//         city:"Karachi",
+//        })}>change city </button>
+//     </div>
+    
+// )}
+// export default App
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const Products = [
+// {
+//   name: "Laptop",
+//    category: "Electronics", 
+//    price: 85000,
+//     stock: 5
+// },
+// {
+//  name: "Mouse",
+//   category: "Accessories",
+//    price: 1500,
+//     stock: 0 
+// },
+// {
+//  name: "Keyboard", 
+//  category: "Accessories",
+//   price: 3500,
+//    stock: 10
+// },
+// {
+// name: "Monitor",
+//  category: "Electronics",
+//   price: 25000,
+//    stock: 3
+// },
+// {
+// name: "USB Cable", 
+// category: "Accessories",
+//  price: 700,
+//   stock: 15
+// }
+// ]
+// function App(){
+//      const [count, setCount] = useState(0);
+//   return(
+//     <div>
+//     <h1>Cart Item :{count}</h1>
+//     <div className='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 '>
+//     {Products.map((product)=>(
+
+//     <ProductCard 
+//      productName = {product.name}
+//        category =  {product.category}
+//         price = {product.price}
+//          stock = {product.stock}  
+//          setCount={setCount}  />
+//   ))}
+//     </div>
+//     </div>
+//   )
+// }
+// export default App;
 
 
 
